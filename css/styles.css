@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 
-/* :root targets the root element of everything inside <html> element.  */
+/* :root targets the root element of everything inside <html> element.
+ easily update colors or other values throughout CSS code by changing the value of the variable in one place.  */
 :root {
   --orange: #ffa500;
 }
 
+/* applies styles to all elements in your application.  */
 * {
   font-family: "Nunito", sans-serif;
   margin: 0;
@@ -16,7 +18,8 @@
   text-decoration: none;
   transition: all 0.2s linear;
 }
-/* selection;apply styles to the portion of an element  */
+/* selection;apply styles to the portion of an element 
+when you highlight text  it turns orange  */
 *::selection {
   background: var(--orange);
 }
